@@ -1,0 +1,8 @@
+<h2>Students</h2>
+<ul>
+    {% for student in students %}
+    <li>
+        <a href="{% url '_detail' pk=artist.id %}">{{ artist.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
