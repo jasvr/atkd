@@ -7,5 +7,4 @@ def parent_list(request):
     return render(request, 'atkd/parent_list.html', {'parents': parents})
 
 def student_list(request):
-    students = Student.objects.all()
-    return render(request,'atkd/student_list.html',{'students':students})
+    students = Student

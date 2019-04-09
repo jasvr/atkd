@@ -8,4 +8,3 @@ def parent_list(request):
 
 def student_list(request):
     students = Student.objects.all()
-    return render(request,'atkd/student_list.html',{'students':students})
