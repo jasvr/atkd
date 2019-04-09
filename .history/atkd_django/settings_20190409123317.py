@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'atkd'
 ]
 
 MIDDLEWARE = [
@@ -79,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'atkddb',
         'USER': 'atkduserjv',
-        'PASSWORD': 'atkd',
+        'PASSWORD': 'tunr',
         'HOST': 'localhost'    }
 }
 

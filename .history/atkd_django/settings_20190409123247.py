@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'atkd'
 ]
 
 MIDDLEWARE = [
@@ -77,9 +76,9 @@ WSGI_APPLICATION = 'atkd_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'atkddb',
-        'USER': 'atkduserjv',
-        'PASSWORD': 'atkd',
+        'NAME': 'tunr',
+        'USER': 'tunruser',
+        'PASSWORD': 'tunr',
         'HOST': 'localhost'    }
 }
 
