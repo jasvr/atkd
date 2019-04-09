@@ -5,4 +5,4 @@ class Parent(models.Model):
     last_name = models.CharField(max_length=100)
 
 class Student(models.Model):
-    parent = models.ForeignKey(Parent, on_delete=models.CASCADE, related_name='students')
+    parent = models.ForeignKey(Parents, on_delete=models.CASCADE, related_name='students')
