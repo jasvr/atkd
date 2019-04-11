@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from .models import Parent, Student
 from .forms import ParentForm, StudentForm
+from .models import Parent, Student
 
 def parent_list(request):
     parents = Parent.objects.all()

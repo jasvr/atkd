@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
+from .forms import ParentForm
 from .models import Parent, Student
-from .forms import ParentForm, StudentForm
 
 def parent_list(request):
     parents = Parent.objects.all()
@@ -29,7 +29,7 @@ def parent_edit(request, pk):
             return redirect('parent_detail', pk=parent.pk)
     else:
         form = ParentForm(instance=parent)
-    return render(request, 'atkd/parent_form.html', {'form': form})
+    return render(request, 'tunr/artist_formƒ.html', {'form': form})
 
 
 def student_list(request):
@@ -45,7 +45,7 @@ def student_create(request):
         form = StudentForm(request.POST)
         if form.is_valid():
             student = form.save()
-            return redirect('student_detail', pk=student.pk)
+            return redirect('student_detail', pk=parent.pk)
     else:
         form = StudentForm()
     return render(request, 'atkd/student_form.html', {'form': form})

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Parent, Student
 from .forms import ParentForm, StudentForm
 
+
 def parent_list(request):
     parents = Parent.objects.all()
     return render(request, 'atkd/parent_list.html', {'parents': parents})
