@@ -1,0 +1,11 @@
+{% extends 'atkd/base.html' %}
+
+{% block content %}
+<h2>Parents <a href="{% url 'parent_create' %}">(+)</a></h2>
+<ul>
+    {% for parent in parents %}
+        <li>
+            <a href="{% url 'parent_detail' pk=parent.id %}">{{ parent.first_name }}</a>
+        </li>
+    {% endfor %}
+</ul>

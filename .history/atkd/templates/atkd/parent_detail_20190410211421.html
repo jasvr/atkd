@@ -1,0 +1,11 @@
+<h2>{{ parent.first_name }} <a href="">(edit)</a></h2>
+<!-- <h4>{{ artist.nationality }}</h4> -->
+
+<h3>Students <a href="">(+)</a></h3>
+<ul>
+    {% for student in parent.students.all %}
+        <li>
+            <a href="{% url 'so_detail' pk=song.pk %}">{{ song.title }}-{{ song.album }}</a>
+        </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Parent View</title>
+        <link rel="stylesheet" href="{% static 'css/tunr.css' %}">
+    </head>
+    <body>
+        <h1>Test Parent H1</h1>
+        <nav>
+            <a href="/students">Students</a>
+            <a href="/">Parents</a>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>
